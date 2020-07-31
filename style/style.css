@@ -1,0 +1,187 @@
+@charset "UTF-8";
+@import url("http://zzupd.dothome.co.kr/200528/cssReset/reset.css");
+
+/* 공통적용 시작 */
+* {
+    color: #000;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* 공통적용 끝 */
+
+/* Guide Line 시작 */
+/*
+div#wrap {
+    border: 1px solid #000;
+}
+*/
+/* Guide Line 끝 */
+
+
+/* div#wrap 시작 */
+div#wrap {
+    width: 1160px;
+    padding: 10px;
+    margin: 10px auto;
+}
+/* div#wrap 끝 */
+
+
+/* header#header 시작 */
+#header {
+    margin-bottom: 30px;
+}
+#header h1 {
+    text-align: center;
+}
+
+/* header#header 끝 */
+
+hr {
+    border: none;
+    border-top: 1px solid #000;
+}
+
+
+/* nav#gnb 시작 */
+
+#gnb>ul#mainMenu {
+    text-align: center;
+    list-style: none;
+}
+#gnb>ul#mainMenu>li {
+    display: inline-block;
+}
+#gnb>ul#mainMenu>li:hover>a {
+    font-weight: bold;
+}
+#gnb>ul#mainMenu>li>a {
+    height: 50px;
+    font-size: 14px;
+    line-height: 50px;
+
+    display: inline-block;
+}
+#gnb>ul#mainMenu>li:not(:last-child)::after {
+    content: "|";
+    font-size: 14px;
+    margin: 0 16px;
+}
+
+/* nav#gnb 끝 */
+
+
+/* main#main 시작 */
+main#main {
+    display: flex;
+}
+#main>div#shortcut {
+    width: 420px;
+/*    border: 1px solid #0f5;*/
+}
+#main>div#thumbnailArea {
+    width: 720px;
+    padding-left: 26px;
+/*    border: 1px solid #05f;*/
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#main>div#thumbnailArea>div.thumbGoods {
+    width: 220px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#main h5>span.goodsHeader {
+    color: #9d7445;
+}
+
+#main div.thumbGoods>span.price {
+    color: #119289;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#main div.thumbGoods>span.price::after {
+    content: " 원";
+    font-size: 18px;
+}
+/* main#main 끝 */
+
+
+/* div#layerPopupBg 시작 */
+div#layerPopupBg {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    display: none;
+}
+
+#layerPopupBg>span#closeBtn {
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 22px;
+    border: 4px solid #fff;
+    border-radius: 40px;
+    display: inline-block;
+    cursor: pointer;
+
+    position: absolute;
+    right: 60px;
+    top: 60px;
+}
+
+#layerPopupBg div#popupGoods {
+    padding: 20px;
+    border: 4px solid #eee;
+    background-color: #fff;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+}
+
+#layerPopupBg div#popupGoods>img {
+    border: 1px solid #ccc;
+}
+
+#layerPopupBg #popupGoods h5 {
+    font-size: 20px;
+}
+#layerPopupBg #popupGoods .subjectHead {
+    color: #9d7445;
+    font-weight: bold;
+}
+#layerPopupBg #popupGoods .price {
+    color: #119289;
+    font-size: 25px;
+    font-weight: bold;
+}
+#layerPopupBg #popupGoods .price::after {
+    content: " 원";
+    font-size: 18px;
+}
+/* div#layerPopupBg 끝 */
+
+
+
+
+
+
+
+
